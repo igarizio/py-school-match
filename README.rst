@@ -130,7 +130,3 @@ Documentation
 Documentation is available at https://py-school-match.readthedocs.io/en/latest/
 and in the ``docs`` directory.
 
-How to cite?
-============
-
-Insert citation here.

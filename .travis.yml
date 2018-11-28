@@ -1,0 +1,13 @@
+dist: xenial
+sudo: required
+
+language: generic
+
+before_install:
+  - echo "deb [trusted=yes] http://downloads.skewed.de/apt/xenial xenial universe" | sudo tee -a /etc/apt/sources.list
+  - echo "deb-src [trusted=yes] http://downloads.skewed.de/apt/xenial xenial universe" | sudo tee -a /etc/apt/sources.list
+  - sudo apt-get update
+  - sudo apt-get install python3-graph-tool
+
+script:
+  - python3 -m unittest discover

@@ -2,6 +2,10 @@
 Py-school-match
 ===============
 
+.. raw:: html
+
+   <a href="http://joss.theoj.org/papers/460a2eeea7e19a32c8a4f9040dc1ea4a"><img  src="http://joss.theoj.org/papers/460a2eeea7e19a32c8a4f9040dc1ea4a/status.svg"></a>
+
 .. image:: https://img.shields.io/badge/License-GPL%20v3-blue.svg
    :target: https://github.com/igarizio/py-school-match/blob/master/LICENSE
    :alt: Licence

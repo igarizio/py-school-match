@@ -42,12 +42,18 @@ the different algorithms without the need of developing case-by-case solutions.
 
 ``py-school-match`` implements the following algorithms:
 
-- Top Trading Cycles (TTC)
-- Deferred acceptance with multiple tie-breaking (DAMTB)
-- Deferred acceptance with single tie-breaking (DASTB)
-- Stable improvement cycles (SIC)
+- Top Trading Cycles (TTC) [@school_mechanism_design]
+- Deferred acceptance with multiple tie-breaking (DAMTB) [@GS_1962]
+- Deferred acceptance with single tie-breaking (DASTB) [@school_mechanism_design]
+- Stable improvement cycles (SIC) [@whats_the_matter_tie_breaking]
 - Deferred Acceptance with multiple tie-breaking, plus stable cycles (MSIC)
 - Deferred Acceptance with single tie-breaking, plus non-stable cycles (NSIC)
-    
+
+# Related literature:
+
+- The Boston Public School Match [@boston_match]
+- The New York City High School Match [@new_york_match]
+- Strategy-proofness versus Efficiency in Matching with
+Indifferences: Redesigning the NYC High School Match [@strategy_vs_efficiency]
 
 # References

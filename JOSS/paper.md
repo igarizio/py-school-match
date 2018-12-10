@@ -56,4 +56,7 @@ the different algorithms without the need of developing case-by-case solutions.
 - Strategy-proofness versus Efficiency in Matching with
 Indifferences: Redesigning the NYC High School Match [@strategy_vs_efficiency]
 
+# Acknowledgement:
+I would like to thank my advisor, Nicolás Figueroa for all of his valuable feedback.
+
 # References

@@ -21,7 +21,8 @@ bibliography: paper.bib
 
 In many countries where schools cannot discriminate among student applicants
 (no entrance exams, no interviews, no previous grades examination, etc.),
-there is an occurring problem: How to assign students fairly and efficiently.
+there is always one question that cannot be answered directly: How to assign students
+fairly and efficiently.
 
 Along the years, there have been many proposed solutions to this problem. These
 vary from simple ``lotteries'' (random priority assignation) to more complex graph algorithms.

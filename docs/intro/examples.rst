@@ -63,7 +63,10 @@ The code runs :class:`.SIC` (Stable Improvements Cycles) as an example, but it c
 
     # inspecting the obtained assignation
     for student in students:
-        print("Student {} was assigned to School {}".format(student.id, student.assigned_school.id))
+        if student.assigned_school is not None:
+            print("Student {} was assigned to School {}".format(student.id, student.assigned_school.id))
+        else:
+            print("Student {} was not assigned to any school".format(student.id))
 
 
 Example using quotas
@@ -130,7 +133,10 @@ The code runs :class:`.SIC` (Stable Improvements Cycles) as an example, but it c
 
     # inspecting the obtained assignation
     for student in students:
-        print("Student {} was assigned to School {}".format(student.id, student.assigned_school.id))
+        if student.assigned_school is not None:
+            print("Student {} was assigned to School {}".format(student.id, student.assigned_school.id))
+        else:
+            print("Student {} was not assigned to any school".format(student.id))
 
 
 Visualizing algorithms

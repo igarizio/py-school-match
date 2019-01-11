@@ -184,9 +184,7 @@ the direct comparison of the results.
         st3.preferences = [sc0, sc1, sc2]
 
         ruleset = psm.RuleSet()
-        # We define a new rule from the criteria above.
         rule_vulnerable = psm.Rule(vulnerable)
-        # We add the rule to the ruleset.
         ruleset.add_rule(rule_vulnerable)
 
         planner = psm.SocialPlanner(students, schools, ruleset)
@@ -194,8 +192,8 @@ the direct comparison of the results.
         # Running each algorithm
         planner.run_matching(algorithm())
 
-        # Storing the results.
-        # ``get_positions_stat`` takes the SocialPlanner object and returns
+        # Storing the results in the dictionary.
+        # Note that ``get_positions_stat`` takes the SocialPlanner object and returns
         # a dictionary with the following format: {position: number of students}
         # For example, {1: 25, 2:14, 'NA': 5} means that 25 students were assigned to
         # their most preferred school, 14 to their second-most preferred school

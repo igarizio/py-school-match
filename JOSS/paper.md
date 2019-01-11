@@ -33,8 +33,8 @@ The correct selection and implementation of the algorithm can have serious
 effects on efficiency and fairness.
 
 ``py-school-match`` is a Python library that implements multiple matching algorithms
-and allows users to simply specify the country's conditions  or requirements, and then
-run interchangeably the different algorithms.
+and allows researchers to simply specify the country's conditions or requirements, and then
+run interchangeably the different algorithms to easily compare their results.
 What makes ``py-school-match`` different from other libraries is that it is specifically
 created to be used in the student-to-school assignation problem. Another distinctive
 characteristic is that it allows the use of quotas, priorities, capacities, among

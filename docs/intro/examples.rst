@@ -139,8 +139,8 @@ The code runs :class:`.SIC` (Stable Improvements Cycles) as an example, but it c
             print("Student {} was not assigned to any school".format(student.id))
 
 
-Comparing multiple algorithms
-=============================
+Comparing algorithms
+====================
 
 The following example simulates the same conditions for two different algorithms. This allows
 the direct comparison of the results.

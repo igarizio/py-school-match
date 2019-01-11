@@ -139,6 +139,73 @@ The code runs :class:`.SIC` (Stable Improvements Cycles) as an example, but it c
             print("Student {} was not assigned to any school".format(student.id))
 
 
+Comparing multiple algorithms
+=============================
+
+The following example simulates the same conditions for two different algorithms. This allows
+the direct comparison of the results.
+
+.. code-block:: python
+
+    # Importing py-school-match
+    import py_school_match as psm
+
+    # Defining a list of algorithms
+    algorithms = [psm.TTC, psm.DAMTB]
+
+    # Simple dictionary to store the results
+    results = {}
+
+    # Iterating over each algorithm and defining the conditions
+    for algorithm in algorithms:
+
+        random.seed(42)
+
+        vulnerable = psm.Criteria("vulnerable", bool)
+
+        st0 = psm.Student()
+        st1 = psm.Student()
+        st2 = psm.Student()
+        st3 = psm.Student()
+
+        st1.add_characteristic(psm.Characteristic(vulnerable, True))
+
+        students = [st0, st1, st2, st3]
+
+        sc0 = psm.School(1)
+        sc1 = psm.School(1)
+        sc2 = psm.School(1)
+
+        schools = [sc0, sc1, sc2]
+
+        st0.preferences = [sc0, sc1, sc2]
+        st1.preferences = [sc0, sc2, sc1]
+        st2.preferences = [sc2, sc1, sc0]
+        st3.preferences = [sc0, sc1, sc2]
+
+        ruleset = psm.RuleSet()
+        # We define a new rule from the criteria above.
+        rule_vulnerable = psm.Rule(vulnerable)
+        # We add the rule to the ruleset.
+        ruleset.add_rule(rule_vulnerable)
+
+        planner = psm.SocialPlanner(students, schools, ruleset)
+
+        # Running each algorithm
+        planner.run_matching(algorithm())
+
+        # Storing the results.
+        # ``get_positions_stat`` takes the SocialPlanner object and returns
+        # a dictionary with the following format: {position: number of students}
+        # For example, {1: 25, 2:14, 'NA': 5} means that 25 students were assigned to
+        # their most preferred school, 14 to their second-most preferred school
+        # and 5 were not assigned no any school.
+        results[algorithm.__name__] = get_positions_stat(planner)
+
+    print(results)
+
+
+
 Visualizing algorithms
 ======================
 

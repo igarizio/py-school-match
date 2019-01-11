@@ -9,7 +9,13 @@
 Py-school-match |version| documentation
 =======================================
 
-This documentation explains how to use py-school-match.
+Py-school-match is a Python library designed to help researchers
+compare different matching algorithms to assign students to schools.
+
+**Why?** Different algorithms have different strengths and weaknesses
+regarding efficiency, fairness and other theoretical characteristics.
+Because of this, the algorithms should be evaluated in simulations in
+order to asses these characteristics.
 
 First steps
 ===========

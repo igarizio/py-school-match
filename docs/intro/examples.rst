@@ -142,8 +142,8 @@ The code runs :class:`.SIC` (Stable Improvements Cycles) as an example, but it c
 Comparing algorithms
 ====================
 
-The following example simulates the same conditions for two different algorithms. This allows
-the direct comparison of the results.
+The following example simulates the same conditions for two different algorithms.
+This allows a direct comparison of the results.
 
 .. code-block:: python
 

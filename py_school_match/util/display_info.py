@@ -6,7 +6,7 @@ from collections import defaultdict
 
 
 def get_positions_stat(planner):
-    """Returns a dictionary with the positions."""
+    """Returns a dictionary with positions as keys and student count as values."""
     ranking_stat = defaultdict(int)
     for student in planner.students:
         if student.assigned_school:

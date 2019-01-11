@@ -119,7 +119,7 @@ Or you can clone the repo and install it:
   cd py-school-match
   python setup.py install
 
-Remember to first install `graph-tool <https://graph-tool.skewed.de>`_.
+Remember to first install `graph-tool <https://graph-tool.skewed.de>`_ (`install instructions <https://git.skewed.de/count0/graph-tool/wikis/installation-instructions>`_).
 
 Development
 -----------

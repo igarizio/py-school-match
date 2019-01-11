@@ -27,6 +27,7 @@ First steps
    intro/install
    intro/getting_started
    intro/examples
+   intro/test
    source/modules
 
 :doc:`intro/install`
@@ -37,6 +38,9 @@ First steps
 
 :doc:`intro/examples`
     Learn to use py-school-match by example.
+
+:doc:`intro/test`
+    Test your py-school-match installation.
 
 .. toctree::
    :maxdepth: 2

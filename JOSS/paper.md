@@ -22,24 +22,25 @@ bibliography: paper.bib
 In many countries where schools cannot discriminate among student applicants
 (no entrance exams, no interviews, no previous grades examination, etc.),
 there is always one question that cannot be answered directly: How to assign students
-fairly and efficiently.
+fairly and efficiently?
 
-Along the years, there have been many proposed solutions to this problem. These
-vary from simple ``lotteries'' (random priority assignation) to more complex graph algorithms.
+Over the years, there have been many proposed solutions to this problem. These
+vary from simple ``lotteries'' (random priority assignment) to more complex graph algorithms.
 Because each option has its own strengths and weaknesses, and given that in the
 real world there is an extra layer of requirements (quotas, special conditions, ranks 
 of preference, etc.) it is vital to analyze and simulate every available option.
-The correct selection and implementation of the algorithm can have serious 
-effects on efficiency and fairness.
+The correct selection of the algorithm can have serious effects on efficiency and fairness,
+as it has been exemplified by studies conducted in school systems from Boston [@boston_match]
+and New York [@new_york_match; @strategy_vs_efficiency]).
 
-``py-school-match`` is a Python library that implements multiple matching algorithms
-and allows researchers to simply specify the country's conditions or requirements, and then
-run interchangeably the different algorithms to easily compare their results.
+``py-school-match`` is a Python library that implements multiple matching algorithms and
+aims to ease the process of choosing the best alternative for each school system.
+It allows researchers to simply specify the country's requirements or conditions,
+and then run interchangeably the different algorithms to compare their results.
 What makes ``py-school-match`` different from other libraries is that it is specifically
-created to be used in the student-to-school assignation problem. Another distinctive
-characteristic is that it allows the use of quotas, priorities, capacities, among
-others, without much effort. These characteristics allow researchers to evaluate accurately
-the different algorithms without the need of developing case-by-case solutions.
+created to be used in the the student-to-school assignment problem. 
+Another distinctive characteristic is that it allows the use of quotas, priorities, capacities,
+among others, without much effort.
 
 ``py-school-match`` implements the following algorithms:
 
@@ -50,14 +51,7 @@ the different algorithms without the need of developing case-by-case solutions.
 - Deferred Acceptance with multiple tie-breaking, plus stable cycles (MSIC)
 - Deferred Acceptance with single tie-breaking, plus non-stable cycles (NSIC)
 
-# Related literature:
-
-- The Boston Public School Match [@boston_match]
-- The New York City High School Match [@new_york_match]
-- Strategy-proofness versus Efficiency in Matching with
-Indifferences: Redesigning the NYC High School Match [@strategy_vs_efficiency]
-
 # Acknowledgement:
-I would like to thank my advisor, Nicolás Figueroa for all of his valuable feedback.
+I would like to thank my advisor, Nicolás Figueroa, for his valuable feedback.
 
 # References

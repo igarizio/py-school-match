@@ -34,7 +34,7 @@ It provides multiple algorithms ready to use:
 - Deferred Acceptance with multiple tie-breaking, plus stable cycles (MSIC)
 - Deferred Acceptance with single tie-breaking, plus non-stable cycles (NSIC)
 
-**Py-school-match** is designed specifically for the student-to-school assignation problem. Because of this,
+**Py-school-match** is designed specifically for the student-to-school assignment problem. Because of this,
 you can focus on evaluating different settings and algorithms, without the need to adapt or develop a
 complete solution.
 

@@ -44,12 +44,12 @@ among others, without much effort.
 
 ``py-school-match`` implements the following algorithms:
 
-- Top Trading Cycles (TTC) [@school_mechanism_design]
+- Top trading cycles (TTC) [@school_mechanism_design]
 - Deferred acceptance with multiple tie-breaking (DAMTB) [@GS_1962]
 - Deferred acceptance with single tie-breaking (DASTB) [@school_mechanism_design]
 - Stable improvement cycles (SIC) [@whats_the_matter_tie_breaking]
-- Deferred Acceptance with multiple tie-breaking, plus stable cycles (MSIC)
-- Deferred Acceptance with single tie-breaking, plus non-stable cycles (NSIC)
+- Deferred acceptance with multiple tie-breaking, plus stable cycles (MSIC)
+- Deferred acceptance with single tie-breaking, plus non-stable cycles (NSIC)
 
 # Acknowledgement:
 I would like to thank my advisor, Nicolás Figueroa, for his valuable feedback.
